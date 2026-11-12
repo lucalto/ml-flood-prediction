@@ -742,6 +742,12 @@ wheels = [
 ]
 
 [[package]]
+name = "gdal"
+version = "3.13.3"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/78/64/78639efe3f1df027f0028e1faf9719dae609b9fd02d4ffd6c2dd7a9a9757/gdal-3.13.3.tar.gz", hash = "sha256:af547af72d2a153d658c1deb2fe595eccb38c18f3d9d298882fbdeee9806a6d2", size = 940613, upload-time = "2026-08-18T09:32:21.609Z" }
+
+[[package]]
 name = "geemap"
 version = "0.38.9"
 source = { registry = "https://pypi.org/simple" }
@@ -1429,6 +1435,7 @@ version = "0.1.0"
 source = { editable = "." }
 dependencies = [
     { name = "fiona" },
+    { name = "gdal" },
     { name = "geemap" },
     { name = "geocube" },
     { name = "geopandas" },
@@ -1446,6 +1453,7 @@ dependencies = [
 [package.metadata]
 requires-dist = [
     { name = "fiona", specifier = ">=1.10.1" },
+    { name = "gdal", specifier = "==3.13.3" },
     { name = "geemap", specifier = ">=0.38.9" },
     { name = "geocube", specifier = ">=0.8.0" },
     { name = "geopandas", specifier = ">=1.2.0" },
